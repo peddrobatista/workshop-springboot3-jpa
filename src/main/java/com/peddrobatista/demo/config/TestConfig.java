@@ -8,14 +8,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import com.peddrobatista.demo.entities.User;
-import com.peddrobatista.demo.repositories.UseRepository;
+import com.peddrobatista.demo.repositories.UserRepository;
 
 @Configuration
 @Profile("test")
 public class TestConfig implements CommandLineRunner{
 	
 	@Autowired
-	private UseRepository userRepository;
+	private UserRepository userRepository;
 
 	@Override
 	public void run(String... args) throws Exception {
